@@ -1,0 +1,510 @@
+<!DOCTYPE html> 
+<!-- Define o tipo de documento como HTML5 -->
+
+<html lang="pt-br"> 
+<!-- Inicia o documento HTML e define o idioma como português do Brasil -->
+
+<head> 
+    <!-- Cabeçalho do documento, contém metadados e links para estilos -->
+
+    <meta charset="UTF-8"> 
+    <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Configura a página para ser responsiva, ajustando para o tamanho da tela do dispositivo -->
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+    <!-- Garante que o site será renderizado usando o melhor modo disponível do navegador -->
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <!-- Link para o framework CSS W3.CSS para estilos prontos -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!-- Link para o Font Awesome, que permite o uso de ícones -->
+
+    <title>GEEAD – Técnico em Desenvolvimento de Sistemas</title> 
+    <!-- Define o título da página que será exibido na aba do navegador -->
+
+    <style> 
+        <!-- Início da seção de estilos CSS personalizados -->
+
+        #main { 
+            margin-left: 120px; 
+            /* Define uma margem à esquerda de 120px para o conteúdo principal */
+        }
+
+        .w3-row-padding img { 
+            margin-bottom: 12px; 
+            /* Define uma margem inferior de 12px para imagens com a classe w3-row-padding */
+        }
+
+        .w3-sidebar { 
+            width: 120px; 
+            background: #222; 
+            /* Define a largura da sidebar (barra lateral) como 120px e cor de fundo como cinza escuro (#222) */
+        }
+
+        body, h1, h2, h3, h4, h5, h6 { 
+            font-family: "Montserrat", sans-serif; 
+            /* Aplica a fonte 'Montserrat' para o corpo e títulos do site */
+        }
+
+        @media only screen and (max-width: 600px) { 
+            /* Regras aplicadas para telas com largura máxima de 600px (versão mobile) */
+            #main { 
+                margin-left: 0; 
+                /* Remove a margem à esquerda do conteúdo para melhor visualização em telas menores */
+            }
+        }
+    </style> 
+    <!-- Fim da seção de estilos CSS personalizados -->
+
+</head> 
+<!-- Fim do cabeçalho do documento -->
+
+<body class="w3-black"> 
+    <!-- Início do corpo da página com fundo preto utilizando a classe 'w3-black' -->
+    
+        <!-- Sidebar -->
+        <nav class="w3-sidebar w3-bar-block w3-center w3-hide-small"> 
+        <!-- Cria uma barra lateral (sidebar) com classes do W3.CSS para estilo -->
+        <!-- w3-bar-block: faz os itens da barra ocuparem toda a largura -->
+        <!-- w3-center: centraliza o conteúdo dentro da barra -->
+        <!-- w3-hide-small: oculta a sidebar em telas pequenas -->
+    
+            <!-- HOME -->
+            <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <!-- Link para a seção HOME com várias classes para estilo -->
+            <!-- w3-bar-item: item da barra -->
+            <!-- w3-button: adiciona estilo de botão -->
+            <!-- w3-padding-large: adiciona um padding maior ao botão -->
+            <!-- w3-hover-black: muda a cor de fundo para preto ao passar o mouse -->
+            <!-- w3-hover-text-cyan: muda a cor do texto para ciano ao passar o mouse -->
+            <!-- w3-text-white: define a cor do texto como branca -->
+    
+                <i class="fa fa-home w3-xxlarge"></i>
+                <!-- Ícone da Font Awesome para a página inicial (casa) com tamanho extra grande -->
+                <p>HOME</p>
+                <!-- Texto do link -->
+            </a>
+    
+            <!-- Sobre -->
+            <a href="#sobre" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <!-- Link para a seção SOBRE com as mesmas classes de estilo que o link anterior -->
+    
+                <i class="fa fa-user w3-xxlarge"></i>
+                <!-- Ícone da Font Awesome para "sobre" (usuário) com tamanho extra grande -->
+                <p>SOBRE</p>
+                <!-- Texto do link -->
+            </a>
+    
+            <!-- Grade Curricular -->
+            <a href="#gradeC" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <!-- Link para a seção Grade Curricular -->
+    
+                <i class="fa fa-columns w3-xxlarge"></i>
+                <!-- Ícone da Font Awesome para "grade curricular" (colunas) com tamanho extra grande -->
+                <p>Grade Curricular</p>
+                <!-- Texto do link -->
+            </a>
+    
+            <!-- Mercado de Trabalho -->
+            <a href="#mercado" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <!-- Link para a seção Mercado de Trabalho -->
+    
+                <i class="fa fa-handshake-o w3-xxlarge"></i>
+                <!-- Ícone da Font Awesome para "mercado de trabalho" (aperto de mãos) com tamanho extra grande -->
+                <p>Mercado de Trabalho</p>
+                <!-- Texto do link -->
+            </a>
+    
+            <!-- Tecnologias -->
+            <a href="#tecnologias" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <!-- Link para a seção Tecnologias -->
+    
+                <i class="fa fa-connectdevelop w3-xxlarge"></i>
+                <!-- Ícone da Font Awesome para "tecnologias" (conexão) com tamanho extra grande -->
+                <p>Tecnologias</p>
+                <!-- Texto do link -->
+            </a>
+    
+            <!-- Contato -->
+            <a href="#contato" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <!-- Link para a seção Contato -->
+    
+                <i class="fa fa-envelope w3-xxlarge"></i>
+                <!-- Ícone da Font Awesome para "contato" (envelope) com tamanho extra grande -->
+                <p>CONTATO</p>
+                <!-- Texto do link -->
+            </a>
+    
+        </nav>
+        <!-- Fim da barra lateral -->
+    <!-- Sidebar -->
+<!-- Início da seção da barra lateral (sidebar), que foi omitida no código, mas faz parte da estrutura -->
+
+<!-- NavBar -->
+<div class="w3-top w3-hide-large w3-hide-medium">
+    <!-- Cria uma barra de navegação que aparece no topo da página -->
+    <!-- w3-top: faz a barra aparecer no topo -->
+    <!-- w3-hide-large: oculta a barra em telas grandes -->
+    <!-- w3-hide-medium: oculta a barra em telas médias -->
+    
+        <nav class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <!-- Cria uma barra de navegação com classes do W3.CSS para estilo -->
+        <!-- w3-bar: define um contêiner para os itens da barra -->
+        <!-- w3-black: define a cor de fundo da barra como preta -->
+        <!-- w3-opacity: aplica uma opacidade à barra -->
+        <!-- w3-hover-opacity-off: remove a opacidade ao passar o mouse -->
+        <!-- w3-center: centraliza os itens da barra -->
+        <!-- w3-small: define o tamanho da fonte como pequena -->
+    
+            <a href="#home" class="w3-bar-item w3-button" style="width:25% ">HOME</a>
+            <!-- Link para a seção HOME -->
+            <!-- w3-bar-item: item da barra -->
+            <!-- w3-button: adiciona estilo de botão -->
+            <!-- style="width:25%": define a largura do link como 25% do total da barra -->
+    
+            <a href="#sobre" class="w3-bar-item w3-button" style="width:25% ">SOBRE</a>
+            <!-- Link para a seção SOBRE com as mesmas classes e estilo de largura do link anterior -->
+    
+            <a href="#tecnologias" class="w3-bar-item w3-button" style="width:27% ">TECNOLOGIAS</a>
+            <!-- Link para a seção TECNOLOGIAS, largura ajustada para 27% -->
+    
+            <a href="#contato" class="w3-bar-item w3-button" style="width:23% ">CONTATO</a>
+            <!-- Link para a seção CONTATO, largura ajustada para 23% -->
+        </nav>
+    </div>
+    <!-- Fim da barra de navegação -->
+    
+    <!-- Conteúdo da Página -->
+    <div class="w3-padding-large" id="main">
+    <!-- Cria um contêiner para o conteúdo principal da página -->
+    <!-- w3-padding-large: aplica um padding grande ao contêiner -->
+    
+        <!-- Home -->
+        <header class="w3-container w3-padding-32 w3-center" id="home">
+        <!-- Cria um cabeçalho para a seção HOME -->
+        <!-- w3-container: define um contêiner para o conteúdo -->
+        <!-- w3-padding-32: aplica um padding de 32 unidades ao cabeçalho -->
+        <!-- w3-center: centraliza o conteúdo dentro do cabeçalho -->
+    
+            <h1>
+                <img src="IMG/logoCab.png" alt="Logo CPS GEEAD SP" class="w3-image" width="50%">
+                <!-- Imagem do logo da CPS GEEAD SP -->
+                <!-- src: caminho da imagem -->
+                <!-- alt: texto alternativo para acessibilidade -->
+                <!-- class="w3-image": aplica estilo de imagem do W3.CSS -->
+                <!-- width="50%": define a largura da imagem como 50% do contêiner -->
+            </h1>
+            <br>
+            <!-- Adiciona uma quebra de linha -->
+    
+            <h1>
+                <img src="IMG/logoDS.png" alt="Desenvolvimento de Sistemas" class="w3-image" width="90%">
+                <!-- Imagem do logo de Desenvolvimento de Sistemas -->
+                <!-- src: caminho da imagem -->
+                <!-- alt: texto alternativo para acessibilidade -->
+                <!-- class="w3-image": aplica estilo de imagem do W3.CSS -->
+                <!-- width="90%": define a largura da imagem como 90% do contêiner -->
+            </h1>
+        </header>
+        <!-- Fim da seção HOME -->
+    </div>
+
+        <!-- Sobre -->
+<div class="w3-content w3-padding-64" id="sobre">
+    <!-- Cria uma seção "Sobre" com conteúdo e padding -->
+    <!-- w3-content: define um contêiner de conteúdo -->
+    <!-- w3-padding-64: aplica um padding de 64 unidades ao contêiner -->
+    
+        <h2 class="w3-text-cyan">Sobre o Curso</h2>
+        <!-- Cabeçalho de nível 2 para o título da seção, com texto na cor ciano -->
+        
+        <hr style="width:200px" class="w3-opacity">
+        <!-- Cria uma linha horizontal (divisor) com largura de 200px e opacidade definida pelas classes do W3.CSS -->
+    
+        <ul class="w3-ul w3-hoverable w3-center w3-white">
+        <!-- Cria uma lista não ordenada com as seguintes classes: -->
+        <!-- w3-ul: define uma lista estilizada -->
+        <!-- w3-hoverable: aplica um efeito ao passar o mouse sobre os itens -->
+        <!-- w3-center: centraliza o conteúdo da lista -->
+        <!-- w3-white: define a cor de fundo da lista como branca -->
+    
+            <li class="w3-cyan w3-xlarge w3-padding-32">O curso tem como objetivo capacitar o aluno para:</li>
+            <!-- Item de lista com texto na cor ciano, tamanho de fonte grande e padding de 32 unidades -->
+    
+            <li class="w3-padding-16">Desenvolver e operar sistemas, aplicações e interfaces gráficas</li>
+            <!-- Item de lista descrevendo uma das habilidades adquiridas no curso, com padding de 16 unidades -->
+    
+            <li class="w3-padding-16">Montar e realizar manutenção em estruturas de banco de dados</li>
+            <!-- Item de lista descrevendo outra habilidade, com padding de 16 unidades -->
+    
+            <li class="w3-padding-16">Codificar programas e Projetar, implantar e customizar sistemas de aplicações</li>
+            <!-- Item de lista para habilidades de codificação e customização, com padding de 16 unidades -->
+    
+            <li class="w3-padding-16">Selecionar programas de aplicação e sistemas operacionais a partir da avaliação das necessidades do usuário;</li>
+            <!-- Item de lista focado na seleção de software, com padding de 16 unidades -->
+    
+            <li class="w3-padding-16">Agir de forma a minimizar os riscos inerentes à segurança de informações, relacionando e aplicando soluções adequadas</li>
+            <!-- Item de lista sobre segurança da informação, com padding de 16 unidades -->
+    
+            <li class="w3-padding-16">Identificar oportunidades e tendências no mundo digital</li>
+            <!-- Item de lista sobre a identificação de oportunidades no digital, com padding de 16 unidades -->
+        </ul>
+    
+        <div class="w3-row w3-padding-16 w3-section w3-light-grey w3-center">
+        <!-- Cria uma linha para apresentar informações adicionais sobre o curso -->
+        <!-- w3-row: define uma linha para layout -->
+        <!-- w3-padding-16: aplica padding de 16 unidades -->
+        <!-- w3-section: define uma seção com um espaço adequado -->
+        <!-- w3-light-grey: aplica uma cor de fundo cinza claro -->
+        <!-- w3-center: centraliza o conteúdo da linha -->
+    
+            <div class="w3-third w3-section">
+            <!-- Cria uma coluna que ocupa um terço da largura da linha -->
+            <!-- w3-section: aplica um espaço adicional à seção -->
+                <span class="w3-xlarge">1200+ horas</span>
+                <!-- Exibe o número total de horas do curso em texto grande -->
+                <br> Aula
+                <!-- Quebra de linha e rótulo 'Aula' -->
+            </div>
+    
+            <div class="w3-third w3-section">
+            <!-- Outra coluna que ocupa um terço da largura da linha -->
+                <span class="w3-xlarge">1000+ horas</span>
+                <!-- Exibe o número total de horas práticas do curso em texto grande -->
+                <br> Aulas Práticas
+                <!-- Quebra de linha e rótulo 'Aulas Práticas' -->
+            </div>
+    
+            <div class="w3-third w3-section">
+            <!-- Última coluna que ocupa um terço da largura da linha -->
+                <span class="w3-xlarge">Certificado</span>
+                <!-- Exibe 'Certificado' em texto grande -->
+                <br> Reconhecido pelo MEC
+                <!-- Quebra de linha e informação adicional sobre o reconhecimento do certificado -->
+            </div>
+        </div>
+    </div>
+    <!-- Fim da seção Sobre -->
+    
+    
+    <!-- Grade Curricular -->
+    <div class="w3-content w3-padding-64" id="gradeC">
+    <!-- Cria uma seção para a Grade Curricular com conteúdo e padding -->
+    <!-- w3-content: define um contêiner de conteúdo -->
+    <!-- w3-padding-64: aplica um padding de 64 unidades ao contêiner -->
+    
+        <h2 class="w3-text-cyan">Grade Curricular</h2>
+        <!-- Cabeçalho de nível 2 para o título da seção, com texto na cor ciano -->
+    
+        <hr style="width:200px" class="w3-opacity">
+        <!-- Cria uma linha horizontal (divisor) com largura de 200px e opacidade definida pelas classes do W3.CSS -->
+    
+        <div class="w3-row w3-row-padding">
+        <!-- Cria uma linha para o layout da grade curricular -->
+        <!-- w3-row: define uma linha para layout -->
+        <!-- w3-row-padding: adiciona espaçamento entre os elementos da linha -->
+    
+            <div class="w3-third w3-margin-bottom">
+            <!-- Cria uma coluna que ocupa um terço da largura da linha -->
+            <!-- w3-margin-bottom: adiciona uma margem na parte inferior da coluna -->
+                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                <!-- Cria uma lista não ordenada com as seguintes classes: -->
+                <!-- w3-ul: define uma lista estilizada -->
+                <!-- w3-white: define a cor de fundo da lista como branca -->
+                <!-- w3-center: centraliza o conteúdo da lista -->
+                <!-- w3-opacity: aplica opacidade aos itens da lista -->
+                <!-- w3-hover-opacity-off: remove a opacidade ao passar o mouse -->
+    
+                    <li class="w3-cyan w3-xlarge w3-padding-32">1º Módulo</li>
+                    <!-- Item de lista que representa o primeiro módulo, com texto na cor ciano, tamanho de fonte grande e padding de 32 unidades -->
+    
+                    <li class="w3-padding-16">Linguagem, Trabalho e Tecnologia</li>
+                    <!-- Item de lista para o conteúdo do primeiro módulo, com padding de 16 unidades -->
+    
+                    <li class="w3-padding-16">Programação e Algoritmos</li>
+                    <!-- Item de lista para o conteúdo do primeiro módulo, com padding de 16 unidades -->
+    
+                    <li class="w3-padding-16">Banco de Dados I</li>
+                    <!-- Item de lista para o conteúdo do primeiro módulo, com padding de 16 unidades -->
+    
+                    <li class="w3-padding-16">Análise e Projeto de Sistemas</li>
+                    <!-- Item de lista para o conteúdo do primeiro módulo, com padding de 16 unidades -->
+    
+                    <li class="w3-padding-16">Design Digital</li>
+                    <!-- Item de lista para o conteúdo do primeiro módulo, com padding de 16 unidades -->
+    
+                    <li class="w3-padding-16">Programação Web I</li>
+                    <!-- Item de lista para o conteúdo do primeiro módulo, com padding de 16 unidades -->
+    
+                    <li class="w3-padding-16">Fundamentos da Informática</li>
+                    <!-- Item de lista para o conteúdo do primeiro módulo, com padding de 16 unidades -->
+    
+                    <li class="w3-padding-16">Técnicas de Programação</li>
+                    <!-- Item de lista para o conteúdo do primeiro módulo, com padding de 16 unidades -->
+    
+                    <li class="w3-padding-16">
+                        <span class="w3-xlarge">Total</span>
+                        <!-- Exibe o total de horas do módulo em texto grande -->
+                        <br>400/h semestre
+                        <!-- Quebra de linha e informação adicional sobre a carga horária do módulo -->
+                    </li>
+                </ul>
+            </div>
+
+              <!-- Divisão do layout em uma coluna de 1/3 do espaço disponível -->
+<div class="w3-third">
+    <!-- Lista não ordenada para os módulos do curso, com estilo de cartão -->
+    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <!-- Título do 2º Módulo com destaque -->
+        <li class="w3-cyan w3-xlarge w3-padding-32">2º Módulo</li>
+        <!-- Lista das disciplinas do módulo com padding -->
+        <li class="w3-padding-16">Inglês Instrumental</li>
+        <li class="w3-padding-16">Desenvolvimento de Sistemas</li>
+        <li class="w3-padding-16">Banco de Dados II</li>
+        <li class="w3-padding-16">Internet e Protocolos</li>
+        <li class="w3-padding-16">Programação de Aplicativos Mobile I</li>
+        <li class="w3-padding-16">Programação Web II</li>
+        <li class="w3-padding-16">Planejamento do Trabalho de Conclusão de Curso (TCC)
+            <br>em Desenvolvimento de Sistemas
+            <br>
+        </li>
+        <!-- Total de horas do semestre -->
+        <li class="w3-padding-16">
+            <span class="w3-xlarge">Total</span>
+            <br>400/h semestre
+        </li>
+    </ul>
+</div>
+
+<!-- Repetição da estrutura acima para o 3º Módulo -->
+<div class="w3-third">
+    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <li class="w3-cyan w3-xlarge w3-padding-32">3º Módulo</li>
+        <li class="w3-padding-16">Segurança de Sistemas de Informação</li>
+        <li class="w3-padding-16">Banco de Dados III</li>
+        <li class="w3-padding-16">Sistemas Embarcados</li>
+        <li class="w3-padding-16">Programação de Aplicativos Mobile II</li>
+        <li class="w3-padding-16">Programação Web III</li>
+        <li class="w3-padding-16">Qualidade e Teste de Software</li>
+        <li class="w3-padding-16">Ética e Cidadania Organizacional</li>
+        <li class="w3-padding-16">Desenvolvimento do Trabalho de Conclusão de Curso (TCC)</li>
+        <li class="w3-padding-16">
+            <span class="w3-xlarge">Total</span>
+            <br>400/h semestre
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+<!-- Fim da seção de Grade Curricular -->
+
+<!-- Início da seção Mercado de Trabalho -->
+<div class="w3-padding-64 w3-content w3-" id="mercado">
+    <h2 class="w3-text-cyan">Mercado de Trabalho</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Parágrafo informativo sobre crescimento do mercado de TI no Brasil -->
+    <p>Segundo o que informa a Associação Brasileira das Empresas de Software (ABES) em parceria com International Data
+        Corporation Pesquisa de Mercado e Consultoria Ltda (IDC), em 2016 haverá um crescimento em 3% no mercado
+        de Tecnologia da Informação no Brasil.</p>
+    <!-- Parágrafo sobre crescimento das oportunidades de emprego em TI -->
+    <p>Outras Associações e Instituições também discursam sobre o constante crescimento da área da Tecnologia da Informação
+        (T.I.), como, por exemplo, a Associação Brasileira das Empresas de Tecnologia da Informação e Comunicação
+        (BRASSCOM), que em uma entrevista realizada pelo Jornal da Globo, foi divulgado pelo presidente da empresa,
+        Sérgio Sgobbi, que em 2015 a área da Tecnologia da Informação (T.I.) registrou uma alta de mais de 8% em
+        oportunidades de emprego e a tendência para os demais anos é crescer gradativamente.</p>
+    <!-- Parágrafo sobre investimentos em TI e expectativas de crescimento -->
+    <p>Além disso, em apresentação ocorrida durante o seminário "Governo e o setor de TI - Garantia de Inovação, Produtividade
+        e Segurança”, em Brasília, a expectativa era de que no segundo semestre de 2015, o setor de TI tivesse um
+        crescimento nos investimentos da ordem de 7% a 7,5%, incluindo hardware, software e serviços.</p>
+    <!-- Informações sobre a pesquisa do IDC e ranking da indústria brasileira de TI -->
+    <p>Essas informações são baseadas em pesquisa feita pelo International Data Corporation (IDC) no mercado de TI do
+        Brasil. Esta mesma pesquisa aponta que a Indústria Brasileira de TI permanece em 7º lugar no ranking mundial
+        e em 1° lugar no Ranking da América Latina em 2015, com um investimento de US$ 2,2 trilhões (crescimento
+        em 9,2% em relação a 2014), sendo que US$ 14,3 bilhões (crescimento de 8,2%) somente no setor Serviços de
+        T.I. e US$ 12,3 bilhões (crescimento em 30,2%) no setor de softwares.</p>
+    <!-- Parágrafo sobre a região Sudeste e seus investimentos em TI -->
+    <p>A pesquisa apresentada também trouxe um mapa do investimento em TI no país, no qual a região Sudeste foi a que
+        mais teve participação total nos investimentos em hardware, software e serviços, com 60,67%.</p>
+
+    <!-- Seção de fontes de consulta -->
+    <p>
+        <h6 class="w3-text-cyan">Fontes de Consulta:</h6>
+        Associação Brasileira das Empresas de Software. Disponível em
+        <a href="http://www.abessoftware.com.br/">Abessoftware</a>. Acesso em 15 Ago. 2017.
+        <br> International Data Corporation. Disponível em
+        <a href=" http://br.idclatin.com/">Idclatin</a>. Acesso em 15 Ago. 2017.
+        <br> CENTRO PAULA SOUZA. Missão, Visão, Objetivos e Diretrizes.
+    </p>
+</div>
+<!-- Fim da seção Mercado de Trabalho -->
+
+<!-- Início da seção Tecnologias -->
+<div class="w3-padding-64 w3-content" id="tecnologias">
+    <h2 class="w3-text-cyan">Tecnologias</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Divisão em linha para exibir imagens lado a lado -->
+    <div class="w3-row w3-row-padding">
+        <div class="w3-half">
+            <!-- Imagens de tecnologias usadas no curso -->
+            <img src="IMG/html5.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+            <img src="IMG/CSS3.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+            <img src="IMG/php.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+        </div>
+
+        <div class="w3-half">
+            <!-- Mais imagens de tecnologias usadas no curso -->
+            <img src="IMG/csharp.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+            <img src="IMG/sql.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+            <img src="IMG/java.png" style="width:50%" class="w3-opacity w3-hover-opacity-off">
+        </div>
+    </div>
+</div>
+<!-- Fim da seção Tecnologias -->
+
+<!-- Início da seção Contato -->
+<div class="w3-padding-128 w3-content w3-text-grey" id="contato">
+    <h2 class="w3-text-cyan">Contato</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <div class="w3-section">
+        <!-- Informações de contato da instituição -->
+        <p>
+            <i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> São Paulo, Brasil</p>
+        <p>
+            <i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Telefone: 11 3333-3333</p>
+        <p>
+            <i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ds@cps.sp.gov.br</p>
+    </div>
+    <br>
+    <p>Entre em contato:</p>
+
+    <!-- Formulário de contato -->
+    <form>
+        <p>
+            <input class="w3-input w3-padding-16" type="text" placeholder="Nome" required name="Nome">
+        </p>
+        <p>
+            <input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email">
+        </p>
+        <p>
+            <input class="w3-input w3-padding-16" type="text" placeholder="Assunto" required name="Assunto">
+        </p>
+        <p>
+            <input class="w3-input w3-padding-16" placeholder="Menssagem" required name="Mensagem">
+        </p>
+        <br>
+        <br>
+        <p>
+            <!-- Botão para enviar a mensagem -->
+            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                <i class="fa fa-paper-plane"></i> Enviar mensagem
+            </button>
+        </p>
+    </form>
+    <br>
+</div>
+<!-- Fim da seção Contato -->
